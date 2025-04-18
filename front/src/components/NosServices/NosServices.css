@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.services-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.titre-services {
+  margin-bottom: 3rem;
+  max-width: 100%;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 1rem;
+  
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.titre-services::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #f49c55;
+  border-radius: 2px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+}
+
+.service-card {
+  border: none;
+  border-radius: 15px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+ 
+}
+
+.service-number {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+/* Enhanced image styling */
+.service-image {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  
+  object-fit: cover;
+  overflow: hidden;
+  will-change: transform;
+  transform: translateZ(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 4px 4px 8px rgba(5, 5, 5, 0.5);
+  border-width: 2px;
+  border-color: rgba(0, 0, 0, 0.525);
+  border-style: solid;
+}
+
+.service-card:hover .service-image {
+  transform: scale3d(1.05, 1.05, 1);
+}
+
+/* Enhanced description styling */
+.service-description {
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 1.2rem 0;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  position: relative;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-description {
+  font-size: 1.8rem;
+  color: #f49c55;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* Add a subtle underline effect on hover */
+.service-description::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #f49c55;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.service-card:hover .service-description::after {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    
+  }
+
+  .service-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    padding: 0;
+    object-fit: cover;
+   
+    
+  
+  }
+  
+  .service-description {
+    font-size: 1.4rem;
+  }
+  
+  .service-card:hover .service-description {
+    font-size: 1.6rem;
+  }
+}
+
+/* For extremely small screens */
+@media (max-width: 480px) {
+  .service-description {
+    font-size: 1.2rem;
+  }
+  
+  .service-card:hover .service-description {
+    font-size: 1.3rem;
+  }
+}

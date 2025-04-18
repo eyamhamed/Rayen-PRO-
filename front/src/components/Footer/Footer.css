@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+3D&display=swap');
+
+
+
+
+
+.Footer {
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(0, 0, 0, 0.656);
+    background-position: cover;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    overflow: clip;
+
+  }
+
+  .slogan{
+   
+    width: 85%;
+    margin: 1% 30%;
+    font-family: "Poppins", sans-serif;
+  }
+
+  
+  
+  .secContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footerLogo {
+   margin-top: 2%;
+   margin-left: -3rem;
+   
+  }
+  
+  .logonav {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .ideaImage {
+    margin-bottom: 1rem;
+  }
+  
+  .idea {
+    font-size: 5vw;
+    height: auto;
+  }
+  
+  .footerLinks {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .footerLinks a {
+    color: #fff;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.656);
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  
+  
+  .contactDetails {
+    margin-bottom: 1rem;
+  }
+  
+  .contactDetails .email,
+  .contactDetails .phone {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .socials {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .icon {
+    font-size: 2rem; /* Augmenté de 1.5rem à 2rem */
+    color: #fff;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem; /* Augmenté de 2.5rem à 3rem */
+    height: 3rem; /* Augmenté de 2.5rem à 3rem */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color:rgba(0, 0, 0, 0.656) ;
+    background-color: #ffffff;
+  }
+  
+  .copyright {
+    margin: 1.5rem 2rem 2rem 2rem;
+    font-size: 1rem;
+    color: #ffffff !important;
+    
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .logonav {
+      max-width: 130px; /* Augmenté de 120px à 130px */
+    }
+  
+    .idea {
+      max-width: 350px; /* Augmenté de 300px à 350px */
+    }
+  
+    .footerLinks {
+      gap: 1rem;
+    }
+  
+    .icon {
+      font-size: 1.8rem; /* Augmenté de 1.2rem à 1.8rem */
+      width: 2.8rem; /* Augmenté de 2rem à 2.8rem */
+      height: 2.8rem; /* Augmenté de 2rem à 2.8rem */
+    }
+  
+    .copyright {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logonav {
+      max-width: 110px; /* Augmenté de 100px à 110px */
+    }
+  
+    .idea {
+      max-width: 300px; /* Augmenté de 250px à 300px */
+    }
+  
+    .footerLinks {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  
+    .icon {
+      font-size: 1.5rem; /* Augmenté de 1rem à 1.5rem */
+      width: 2.5rem; /* Augmenté de 1.5rem à 2.5rem */
+      height: 2.5rem; /* Augmenté de 1.5rem à 2.5rem */
+    }
+  
+    .copyright {
+      font-size: 0.8rem; /* Augmenté de 0.7rem à 0.8rem */
+    }
+  }
+  

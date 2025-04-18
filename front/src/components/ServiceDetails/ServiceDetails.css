@@ -1,0 +1,148 @@
+.service-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.service-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top:30%;
+  flex-wrap: wrap;
+}
+
+.service-nav-item {
+  padding: 1rem 2rem;
+  background: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: black;
+}
+
+.service-nav-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  color: #f49c55;
+}
+
+.service-nav-item.active {
+  background: #f49c55;
+  color: white;
+}
+
+.service-details-title {
+  font-size: 2.5rem;
+  color: black;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.service-details-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: black;
+  margin-top: 8rem;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.service-features {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-features h2 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 1.5rem;
+}
+
+.service-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-features li {
+  font-size: 1.1rem;
+  color: black;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.service-features li::before {
+  content: '•';
+  color: #f49c55;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: -0.2rem;
+}
+.service-content {
+  display: flex;
+  flex-direction: row; /* Disposition horizontale */
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.service-image-container {
+  width: 40%; /* Largeur de l'image */
+  flex-shrink: 0; /* Empêche le rétrécissement */
+  
+}
+
+.service-details-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  height:auto;
+  margin-top: 5rem; /* Hauteur maximale optionnelle */
+}
+
+.service-info {
+  width: 60%; /* Largeur de la section texte */
+}
+
+/* Pour assurer la réactivité sur les petits écrans */
+
+
+
+@media (max-width: 999px) {
+  .service-details-container {
+    padding: 1rem;
+  }
+
+  .service-details-title {
+    font-size: 2rem;
+  }
+
+  .service-details-description {
+    font-size: 1.1rem;
+    margin-top: 3rem;
+  }
+
+  .service-features h2 {
+    font-size: 1.5rem;
+  }
+
+  .service-features li {
+    font-size: 1rem;
+  }
+  .service-content {
+    flex-direction: column; /* Empile verticalement sur mobile */
+  }
+
+  .service-image-container,
+  .service-info {
+    width: 100%;
+  }
+}
